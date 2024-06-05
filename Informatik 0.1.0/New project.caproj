@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>1024</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="789331144055204">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="419804267855154">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Barriers" sid="923322726201006">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="417320517385388">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332611299914811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="501211738712208">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="144199988995406">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="385875226644828">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="651798162634788" speed="5">
+                    <frame duration="1" hotspotX="0.519713" hotspotY="0.541387" original-source="C:\Users\adido\Downloads\pixil-frame-0__4_-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.410394" y="0.357941" />
+                            <point x="0.442652" y="0.317673" />
+                            <point x="0.537634" y="0.352349" />
+                            <point x="0.580645" y="0.411633" />
+                            <point x="0.629032" y="0.52349" />
+                            <point x="0.636201" y="0.60179" />
+                            <point x="0.578853" y="0.655481" />
+                            <point x="0.534051" y="0.655481" />
+                            <point x="0.473118" y="0.655481" />
+                            <point x="0.396057" y="0.655482" />
+                            <point x="0.362008" y="0.521253" />
+                            <point x="0.405914" y="0.488814" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="163629844523642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Pixilart_-_Free_online_pixel_art_drawing_tool2-removebg-preview (1).png">
+                        <collision-poly>
+                            <point x="0.405018" y="0.478747" />
+                            <point x="0.405018" y="0.326622" />
+                            <point x="0.483871" y="0.322148" />
+                            <point x="0.565412" y="0.383669" />
+                            <point x="0.618279" y="0.478747" />
+                            <point x="0.637993" y="0.577181" />
+                            <point x="0.610216" y="0.619687" />
+                            <point x="0.577061" y="0.648769" />
+                            <point x="0.491935" y="0.653244" />
+                            <point x="0.396057" y="0.653244" />
+                            <point x="0.390681" y="0.592841" />
+                            <point x="0.353943" y="0.543624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Pixilart_-_Free_online_pixel_art_drawing_tool3-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.405018" y="0.353467" />
+                            <point x="0.55914" y="0.344519" />
+                            <point x="0.580645" y="0.409396" />
+                            <point x="0.603942" y="0.503355" />
+                            <point x="0.598566" y="0.498881" />
+                            <point x="0.60932" y="0.592841" />
+                            <point x="0.575269" y="0.64877" />
+                            <point x="0.40681" y="0.651007" />
+                            <point x="0.409498" y="0.56264" />
+                            <point x="0.412186" y="0.474272" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.5" original-source="C:\Users\adido\Downloads\Pixilart_-_Free_online_pixel_art_drawing_tool4-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.415027" y="0.329597" />
+                            <point x="0.499106" y="0.327354" />
+                            <point x="0.565295" y="0.340808" />
+                            <point x="0.59034" y="0.473094" />
+                            <point x="0.605546" y="0.561659" />
+                            <point x="0.584974" y="0.643498" />
+                            <point x="0.407871" y="0.647982" />
+                            <point x="0.381485" y="0.551569" />
+                            <point x="0.414132" y="0.466368" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Pixilart_-_Free_online_pixel_art_drawing_tool5-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.3638" y="0.543625" />
+                            <point x="0.405018" y="0.49217" />
+                            <point x="0.405914" y="0.323266" />
+                            <point x="0.5" y="0.324384" />
+                            <point x="0.572581" y="0.370246" />
+                            <point x="0.596774" y="0.438479" />
+                            <point x="0.625448" y="0.520134" />
+                            <point x="0.611111" y="0.570469" />
+                            <point x="0.587813" y="0.597315" />
+                            <point x="0.587814" y="0.657718" />
+                            <point x="0.387097" y="0.651006" />
+                            <point x="0.392473" y="0.586129" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="818208486728602" speed="5">
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Jump_1-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.406082" y="0.50783" />
+                            <point x="0.499106" y="0.324385" />
+                            <point x="0.647585" y="0.440716" />
+                            <point x="0.67263" y="0.498881" />
+                            <point x="0.726297" y="0.657718" />
+                            <point x="0.499106" y="0.691275" />
+                            <point x="0.352415" y="0.559284" />
+                            <point x="0.406082" y="0.498881" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Jump_2-removebg-preview (1).png">
+                        <collision-poly>
+                            <point x="0.406082" y="0.50783" />
+                            <point x="0.499106" y="0.324385" />
+                            <point x="0.660107" y="0.425056" />
+                            <point x="0.726297" y="0.498881" />
+                            <point x="0.701252" y="0.626398" />
+                            <point x="0.499106" y="0.758389" />
+                            <point x="0.406082" y="0.49217" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500898" hotspotY="0.5" original-source="C:\Users\adido\Downloads\Jump_4-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.499102" y="0.305804" />
+                            <point x="0.680431" y="0.397321" />
+                            <point x="0.67684" y="0.5" />
+                            <point x="0.648115" y="0.5625" />
+                            <point x="0.499102" y="0.526786" />
+                            <point x="0.454219" y="0.435268" />
+                            <point x="0.472172" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Jump_2-removebg-preview (1).png">
+                        <collision-poly>
+                            <point x="0.406082" y="0.50783" />
+                            <point x="0.499106" y="0.324385" />
+                            <point x="0.660107" y="0.425056" />
+                            <point x="0.726297" y="0.498881" />
+                            <point x="0.701252" y="0.626398" />
+                            <point x="0.499106" y="0.758389" />
+                            <point x="0.406082" y="0.49217" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\Jump_1-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.406082" y="0.50783" />
+                            <point x="0.499106" y="0.324385" />
+                            <point x="0.647585" y="0.440716" />
+                            <point x="0.67263" y="0.498881" />
+                            <point x="0.726297" y="0.657718" />
+                            <point x="0.499106" y="0.691275" />
+                            <point x="0.352415" y="0.559284" />
+                            <point x="0.406082" y="0.498881" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501119" original-source="C:\Users\adido\Downloads\pixil-frame-0__4_-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.403226" y="0.503356" />
+                            <point x="0.5" y="0.35123" />
+                            <point x="0.612903" y="0.483221" />
+                            <point x="0.616487" y="0.498881" />
+                            <point x="0.616487" y="0.521253" />
+                            <point x="0.5" y="0.630872" />
+                            <point x="0.374552" y="0.532438" />
+                            <point x="0.426523" y="0.498881" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Boss" sid="429322924373450">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="849708214003903" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="621497225380274">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="132543503084135">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="699460228485992">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="867629527368777">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="361370009829949" speed="5">
+                    <frame duration="1" hotspotX="0.655914" hotspotY="0.626344" original-source="C:\Users\adido\Downloads\The_Real_Sigma-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.41129" y="0.548387" />
+                            <point x="0.467742" y="0.19086" />
+                            <point x="0.819893" y="0.196236" />
+                            <point x="0.830645" y="0.405914" />
+                            <point x="0.943548" y="0.567205" />
+                            <point x="0.955645" y="0.99597" />
+                            <point x="0.39785" y="0.997313" />
+                            <point x="0" y="0.741935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="701005121901233" speed="5">
+                    <frame duration="1" hotspotX="0.50081" hotspotY="0.5" original-source="C:\Users\saifp\Downloads\Boss-removebg-preview.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Axe" sid="533195839643642">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="525419515313672">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697606913018031" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.622857" original-source="C:\Users\rfisc\Downloads\IMG_0973-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.441775" y="0.400632" />
+                            <point x="0.45186" y="0.969598" />
+                            <point x="0.582959" y="0.980611" />
+                            <point x="0.56279" y="0.371266" />
+                            <point x="0.798099" y="0.554805" />
+                            <point x="1" y="0.294183" />
+                            <point x="0.771205" y="0.0152069" />
+                            <point x="0.495559" y="0.184061" />
+                            <point x="0.246805" y="0.0445727" />
+                            <point x="0.0182196" y="0.235451" />
+                            <point x="0.132512" y="0.540122" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.36" hotspotY="0.605714" original-source="C:\Users\rfisc\Downloads\IMG_0978-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.18928" y="0.267699" />
+                            <point x="0.529279" y="0.0228571" />
+                            <point x="0.77606" y="0.170851" />
+                            <point x="0.919732" y="0.219586" />
+                            <point x="0.923404" y="0.474036" />
+                            <point x="0.821709" y="0.59435" />
+                            <point x="0.595946" y="0.679173" />
+                            <point x="0.55696" y="0.475488" />
+                            <point x="0.0646398" y="0.963233" />
+                            <point x="0" y="0.938722" />
+                            <point x="0.479788" y="0.416893" />
+                            <point x="0.261201" y="0.436582" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.382857" hotspotY="0.673333" original-source="C:\Users\rfisc\Downloads\IMG_0979-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.37351" y="0.397112" />
+                            <point x="0.347179" y="0.231306" />
+                            <point x="0.692276" y="0" />
+                            <point x="0.805326" y="0.0815212" />
+                            <point x="0.832662" y="0.303042" />
+                            <point x="0.997885" y="0.45456" />
+                            <point x="0.908187" y="0.682362" />
+                            <point x="0.728803" y="0.867385" />
+                            <point x="0.549419" y="0.859075" />
+                            <point x="0.437612" y="0.701687" />
+                            <point x="0.0571429" y="0.961227" />
+                            <point x="0.0228571" y="0.902502" />
+                            <point x="0.572469" y="0.499807" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.371429" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.604156" y="0.440141" />
+                            <point x="0.0330178" y="0.450189" />
+                            <point x="0.0219633" y="0.580804" />
+                            <point x="0.633633" y="0.560709" />
+                            <point x="0.449394" y="0.795148" />
+                            <point x="0.711012" y="1" />
+                            <point x="0.991052" y="0.768353" />
+                            <point x="0.821554" y="0.493726" />
+                            <point x="0.961574" y="0.245892" />
+                            <point x="0.769967" y="0.0181522" />
+                            <point x="0.464133" y="0.132022" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.354286" hotspotY="0.28" original-source="C:\Users\rfisc\Downloads\IMG_0981-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.000873728" y="0.104376" />
+                            <point x="0.0670688" y="0.0188893" />
+                            <point x="0.601835" y="0.366736" />
+                            <point x="0.542632" y="0.106278" />
+                            <point x="0.757474" y="0.0205897" />
+                            <point x="0.973466" y="0.264412" />
+                            <point x="0.903744" y="0.588235" />
+                            <point x="0.918887" y="0.907632" />
+                            <point x="0.688933" y="0.993778" />
+                            <point x="0.516121" y="0.866591" />
+                            <point x="0.389926" y="0.57215" />
+                            <point x="0.572543" y="0.48493" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.388571" hotspotY="0.38" original-source="C:\Users\rfisc\Downloads\IMG_0982-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.10216" y="0" />
+                            <point x="0.552857" y="0.450206" />
+                            <point x="0.590919" y="0.28708" />
+                            <point x="0.84823" y="0.376873" />
+                            <point x="0.979827" y="0.546667" />
+                            <point x="0.954795" y="0.704567" />
+                            <point x="0.83954" y="0.801291" />
+                            <point x="0.747143" y="0.991347" />
+                            <point x="0.468043" y="0.916034" />
+                            <point x="0.268943" y="0.747387" />
+                            <point x="0.294471" y="0.503694" />
+                            <point x="0.481521" y="0.598513" />
+                            <point x="0.0342857" y="0.1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.428571">
+                        <collision-poly>
+                            <point x="0.565782" y="0.603171" />
+                            <point x="0.555697" y="0.034204" />
+                            <point x="0.424598" y="0.0231916" />
+                            <point x="0.444766" y="0.632536" />
+                            <point x="0.209457" y="0.448997" />
+                            <point x="0" y="0.70962" />
+                            <point x="0.236352" y="0.988595" />
+                            <point x="0.511998" y="0.819742" />
+                            <point x="0.760752" y="0.95923" />
+                            <point x="0.989337" y="0.768352" />
+                            <point x="0.875045" y="0.46368" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.588571" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.400844" y="0.56369" />
+                            <point x="0.971982" y="0.553643" />
+                            <point x="0.983037" y="0.423028" />
+                            <point x="0.371367" y="0.443122" />
+                            <point x="0.555606" y="0.208683" />
+                            <point x="0.293988" y="0" />
+                            <point x="0.0139482" y="0.235478" />
+                            <point x="0.183446" y="0.510105" />
+                            <point x="0.043426" y="0.757939" />
+                            <point x="0.235033" y="0.985679" />
+                            <point x="0.540867" y="0.871809" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.666667" hotspotY="0.594286" original-source="C:\Users\rfisc\Downloads\IMG_0976-removebg-preview (1).png">
+                        <collision-poly>
+                            <point x="0.0437964" y="0.178046" />
+                            <point x="0.431181" y="0.149023" />
+                            <point x="0.605232" y="0.0285714" />
+                            <point x="0.906667" y="0.184642" />
+                            <point x="0.984633" y="0.394393" />
+                            <point x="0.8513" y="0.529301" />
+                            <point x="0.637548" y="0.384651" />
+                            <point x="0.930463" y="0.92" />
+                            <point x="0.790861" y="0.973944" />
+                            <point x="0.497927" y="0.421254" />
+                            <point x="0.374511" y="0.613538" />
+                            <point x="0.117761" y="0.485822" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="215948129917796">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\adido\Downloads\skibbidischloss.jpg" />
+        </object-type>
+        <object-type name="Sprite7" sid="155633398474703">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="262073989775089">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720020118272874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="343646520317443">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="170925715608763">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947210586651613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="989420668701965">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Font" sid="807160518570006">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Schwert" sid="292084514767681">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\schwert-removebg-preview.png" />
+        </object-type>
+        <object-type name="Font3" sid="881841737614368">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="EmptyHealthbar" sid="568284833915973">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414276127679140" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.466667">
+                        <collision-poly>
+                            <point x="0" y="0.4" />
+                            <point x="1" y="0.4" />
+                            <point x="1" y="0.519999" />
+                            <point x="0" y="0.519999" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FullHealthbar" sid="948691750344611">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202018703608588" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.466667">
+                        <collision-poly>
+                            <point x="0" y="0.4" />
+                            <point x="1" y="0.4" />
+                            <point x="1" y="0.519999" />
+                            <point x="0" y="0.52" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barriers2" sid="402091595432732">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="768273558866149">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="904712191726902" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Floor_Barrier" sid="234609589949589">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="946317277208105">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175660419993005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="174113753413055">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="986975012841445">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170225290128628" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="767633358498844">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="831160321937279">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705794744090723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="495474047653499">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413115086115663" speed="5">
+                    <frame duration="1" hotspotX="0.489362" hotspotY="0.501672" original-source="E:\Monk-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.340425" y="0.130435" />
+                            <point x="0.553192" y="0" />
+                            <point x="0.978724" y="0.250836" />
+                            <point x="0.781916" y="0.481605" />
+                            <point x="0.856383" y="0.688964" />
+                            <point x="0.936171" y="0.959866" />
+                            <point x="0.111703" y="0.956522" />
+                            <point x="0.265958" y="0.685619" />
+                            <point x="0.382979" y="0.464883" />
+                            <point x="0.159574" y="0.237458" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="661405042420421">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ibrahisa\Downloads\a7a78507-90dc-4c36-a3fc-f16b5eb4c509.jpg" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="827479392474735">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ibrahisa\Downloads\a7a78507-90dc-4c36-a3fc-f16b5eb4c509.jpg" />
+        </object-type>
+        <object-type name="Sprite4" sid="184064462169902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925641007077672" speed="5">
+                    <frame duration="1" hotspotX="0.597561" hotspotY="0.354701" original-source="E:\SIGMA_STRIKERS_LOGO.png">
+                        <collision-poly>
+                            <point x="0.337398" y="0.0897436" />
+                            <point x="0.597561" y="0.025641" />
+                            <point x="0.808943" y="0.141026" />
+                            <point x="0.979675" y="0.350427" />
+                            <point x="0.890244" y="0.649573" />
+                            <point x="0.597561" y="0.948718" />
+                            <point x="0.195122" y="0.764957" />
+                            <point x="0.0203252" y="0.350427" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game Events.xml</event-sheet>
+        <event-sheet>Menu Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Audio" uid="13">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="jumpsound_c_07.m4a" />
+        <file name="jumpsound_c_07.ogg" />
+        <file name="arrow-shot.m4a" />
+        <file name="arrow-shot.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="boss-battle-loop-2.m4a" />
+        <file name="boss-battle-loop-2.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

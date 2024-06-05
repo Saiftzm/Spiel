@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Events</name>
+    <events>
+        <variable constant="0" name="MenuSelect" sid="827272857900372" static="0" type="number">0</variable>
+        <event-block sid="885837194419300">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="574682631279979" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="191144587510159" type="System">
+                    <param id="0" name="Variable">MenuSelect</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="912617606096252">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="629224886335444" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="787426364978484" type="System">
+                    <param id="0" name="Variable">MenuSelect</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="940413348088947">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="764100035772043" type="System">
+                    <param id="0" name="Variable">MenuSelect</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="964397497869270" type="Schwert">
+                    <param id="0" name="X">96</param>
+                    <param id="1" name="Y">595</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="575297814503369">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="739338365889795" type="System">
+                    <param id="0" name="Variable">MenuSelect</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="238495746885963" type="Schwert">
+                    <param id="0" name="X">96</param>
+                    <param id="1" name="Y">660</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="757353255919054">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="383304929372281" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="250062768080948">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="578948530480817" type="System">
+                            <param id="0" name="Variable">MenuSelect</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="973127658066077" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="840424765851673">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="321886414076824" type="System">
+                            <param id="0" name="Variable">MenuSelect</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="308737528494222" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
