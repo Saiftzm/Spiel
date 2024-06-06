@@ -1,0 +1,7 @@
+Bitte den Ordner extrahieren.
+Den Ordner selbst, nicht die Dataien im ordner.
+
+Um das Spiel auf Construct zu öffnen, starten sie Construct 2, klicken sie oben Links auf "File" 
+dann auf "Open" und dann wählen sie das Projekt aus dem extrahiertem Ordner.
+
+Starten sie das Spiel vom "Menu" Layout aus.
